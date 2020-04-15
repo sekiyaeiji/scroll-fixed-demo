@@ -2,19 +2,29 @@ extend ../layout/default
 
 block body
   body
-    h1.h1.h1-ok scroll-fixed-demo A ： OK
+    .fixed-wrapper.fixed-wrapper04.js-fixed-wrapper04
+      .fixed.fixed04.js-fixed04 固定コンテンツ
+
+    h1.h1.h1-ng scroll-fixed-demo D ： NG？
 
     p.p
-      |・ 初期表示時「固定コンテンツ」は 非固定表示
+      |・ 初期表示時「固定コンテンツ」は 非表示 ＆ 非固定表示
       br
-      |・ 「固定コンテンツ」が画面上端に到達したら 固定表示
+      |・ ウィンドウのスクロール量が上端から 300px 発生したら 「固定コンテンツ」を 表示 ＆ 固定表示
       br
-      |・ 「固定コンテンツ」が画面上端から下部に離れたら 非固定表示
-
-    .fixed-wrapper.js-fixed-wrapper01
-      .fixed.js-fixed01 固定コンテンツ
+      |・ ウィンドウのスクロール量が上端から 300px 以下にもどったら「固定コンテンツ」を 非表示 ＆ 非固定表示
 
     p.p
+      |テキスト
+      br
+      |テキスト
+      br
+      |テキスト
+      br
+      |テキスト
+      br
+      |テキスト
+      br
       |テキスト
       br
       |テキスト

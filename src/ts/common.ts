@@ -24,6 +24,19 @@ let setFixed03 = (initY: any) => {
   }
 }
 
+let setFixed04 = (initY: any) => {
+  let scrollY = window.pageYOffset - 300
+  let target = document.querySelectorAll('.js-fixed04')[0]
+  let classIsFixed = 'is-fixed04'
+  console.log('y ： ' + initY)
+  console.log('scrollY ： ' + scrollY)
+  if (scrollY > initY) {
+    target.classList.add(classIsFixed)
+  } else {
+    target.classList.remove(classIsFixed)
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   let wrapper01 = document.querySelectorAll('.js-fixed-wrapper01')[0]
   if (wrapper01) {
@@ -37,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let initY = wrapper03.getBoundingClientRect().top + window.pageYOffset
     window.addEventListener('scroll', function () {
       setFixed03(initY)
+    })
+  }
+  let wrapper04 = document.querySelectorAll('.js-fixed-wrapper04')[0]
+  if (wrapper04) {
+    let initY = wrapper04.getBoundingClientRect().top + window.pageYOffset
+    window.addEventListener('scroll', function () {
+      setFixed04(initY)
     })
   }
 })
