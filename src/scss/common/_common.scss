@@ -43,6 +43,10 @@
   &.fixed-wrapper04 {
     min-height: 0;
   }
+
+  &.fixed-wrapper05 {
+    min-height: 0;
+  }
 }
 
 .fixed {
@@ -76,6 +80,16 @@
   }
 
   &.is-fixed04 {
+    position: fixed;
+    display: block;
+    top: 0;
+  }
+
+  &.fixed05 {
+    display: none;
+  }
+
+  &.is-fixed05 {
     position: fixed;
     display: block;
     top: 0;
