@@ -25,7 +25,7 @@ let setFixed03 = (initY: any) => {
 }
 
 let setFixed04 = (initY: any) => {
-  let scrollY = window.pageYOffset - 300
+  let scrollY = window.pageYOffset
   let target = document.querySelectorAll('.js-fixed04')[0]
   let classIsFixed = 'is-fixed04'
   console.log('y ： ' + initY)
@@ -38,7 +38,7 @@ let setFixed04 = (initY: any) => {
 }
 
 let setFixed05 = (initY: any) => {
-  let scrollY = window.pageYOffset
+  let scrollY = window.pageYOffset - 300
   let target = document.querySelectorAll('.js-fixed05')[0]
   let classIsFixed = 'is-fixed05'
   console.log('y ： ' + initY)

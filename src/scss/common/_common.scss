@@ -33,6 +33,7 @@
 }
 
 .fixed-wrapper {
+  position: relative;
   margin-bottom: 20px;
   min-height: 64px;
 
@@ -46,6 +47,14 @@
 
   &.fixed-wrapper05 {
     min-height: 0;
+  }
+
+  .measure {
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    font-size: 10px;
+    color: #999;
   }
 }
 
